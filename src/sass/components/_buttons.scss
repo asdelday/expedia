@@ -1,0 +1,39 @@
+.expedia-btn {
+    padding: 10px 15px;
+    vertical-align: bottom;
+    font-size: 1em;
+    line-height: 1.2;
+    font-family: $font-family;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    border: 1px solid transparent;
+    border-width: 1px 1px 2px;
+    border-radius: 0.23529412em;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: $medium-grey $dark-grey $dark-grey;
+    background: $grey;
+    background: linear-gradient(to bottom, $grey 0%, $medium-grey 100%);
+    color: $white;
+    transition: none;
+    &:focus { outline: none; }
+    &:hover { background: $light-grey; }
+    &:active {
+        border-bottom-width: 1px;
+        border-color: $dark-grey $dark-grey $medium-grey;
+        background: $light-grey;
+    }
+
+    &.expedia-primary-btn {
+        border-color: $dark-blue $very-dark-blue $very-dark-blue;
+        background: $blue;
+        background: linear-gradient(to bottom, $blue 0%, $dark-blue 100%);
+        color: $white;
+        &:hover { background: $light-blue; }
+        &:active {
+            border-color: $very-dark-blue $very-dark-blue $dark-blue;
+            background: $light-blue;
+        }
+    }
+}

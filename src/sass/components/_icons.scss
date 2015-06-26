@@ -1,0 +1,21 @@
+.expedia-suitcase {
+    color: $green;
+    + span { color: $green; }
+}
+
+.expedia-usd {
+    color: $white;
+    background-color: $very-dark-grey;
+    padding: 3px 5px;
+    font-size: .7rem;
+    border-radius: 100%;
+}
+
+.expedia-ban {
+    color: $red;
+}
+
+.expedia-check {
+    color: $green;
+    + span { color: $green; }
+}

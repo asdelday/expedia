@@ -1,0 +1,91 @@
+.expedia-upgrade-fare-panel {
+    border-width: 5px;
+
+    > .expedia-panel-header {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    > .expedia-panel-body {
+        padding: 0;
+    }
+
+
+    /* Class of service accordion */
+    .expedia-class-of-service-accordion {
+
+        .expedia-class-of-service-item {
+
+            > .expedia-accordion-panel {
+                padding: 0;
+            }
+        }
+    }
+
+    /* Fares accordion */
+    .expedia-fare-accordion {
+
+        .expedia-fare-item {
+            > .expedia-accordion-header, > .expedia-accordion-panel {
+                background-color: $white;
+            }
+
+            &.expedia-fare-included {
+                > .expedia-accordion-header, > .expedia-accordion-panel {
+                    background-color: $light-green;
+                }
+            }
+
+            > .expedia-accordion-header {
+                $top-name: 6px;
+                $top-price: -6px;
+                $top-characteristic: $top-name + 4px;
+                $top-link: $top-characteristic + 3px;
+                $top-included: $top-price - 5px;
+
+                @include container();
+                position: relative;
+                @mixin top-position($top) { position: relative; top: $top; }
+
+                .expedia-fare-accordion-header-sub-panel {
+                    padding-top: 5px;
+                    &:first-child { padding-top: 0; }
+                    @media #{$large-up} { padding-top: 0; }
+                }
+
+                .expedia-accordion-link {
+                    @include top-position(40px);
+                    @media #{$large-up} { @include top-position($top-link); }
+                }
+
+                .expedia-fare-name {
+                    font-size: 1.25rem;
+                    font-weight: 900;
+                    @include top-position($top-name);
+                }
+
+                .expedia-price-included, .expedia-price-wrapper { padding-right: 10px; }
+                .expedia-price-included { @include top-position($top-included); }
+                .expedia-price-wrapper { @include top-position($top-price); }
+
+                .expedia-fare-characteristic { @include top-position($top-characteristic); }
+                .expedia-suitcase { font-size: 20px; }
+                .expedia-check { font-size: 20px; }
+                .expedia-ban { font-size: 22px; }
+                .expedia-usd { font-size: 15px; padding: 3px 6px; }
+
+                .expedia-accordion-link:before {
+                    content: attr(collapsed);
+                }
+            }
+
+            &.active > .expedia-accordion-header .expedia-accordion-link:before {
+                content: attr(expanded);
+            }
+
+            > .expedia-accordion-panel {
+                padding: 5px 20px 20px;
+            }
+        }
+    }
+}

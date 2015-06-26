@@ -1,0 +1,53 @@
+.expedia-accordion {
+    $accordion-border: solid 1px $grey;
+
+    margin: 0;
+    border: $accordion-border;
+    font-family: $font-family;
+
+    .expedia-accordion-item {
+        margin: 0;
+
+        > .expedia-accordion-header {
+            border-top: $accordion-border;
+            border-bottom: none;
+            display: block;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: 600;
+            background-color: $very-light-blue;
+            &:last-child { border-bottom: $accordion-border; }
+
+            .expedia-double-arrow {
+                width: 11px;
+                height: 11px;
+                fill: $blue;
+                transform: rotate(90deg);
+                transition: transform .3s;
+            }
+        }
+
+        &.active > .expedia-accordion-header .expedia-double-arrow {
+            transform: rotate(270deg);
+        }
+
+        .expedia-accordion-link {
+            color: $blue;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover {
+                color: lighten($light-blue, 10%);
+
+                .expedia-double-arrow {
+                    fill: lighten($light-blue, 10%);
+                }
+            }
+        }
+
+        > .expedia-accordion-panel {
+            display: none;
+            padding: 15px 20px;
+        }
+    }
+
+}

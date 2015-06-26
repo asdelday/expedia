@@ -1,0 +1,32 @@
+.expedia-panel  {
+    $panel-border: solid 1px $grey;
+
+    color: $very-dark-grey;
+    border: $panel-border;
+    width: 100%;
+    font-family: $font-family;
+    background-color: $white;
+
+    > .expedia-panel-header {
+        padding: 10px 20px;
+        background-color: $light-grey;
+        font-weight: 600;
+        border-bottom: $panel-border;
+    }
+
+    > .expedia-panel-body {
+        background-color: $white;
+        padding: 10px 20px;
+    }
+
+
+    &.expedia-primary-panel {
+        border-color: $very-dark-blue;
+
+        > .expedia-panel-header {
+            color: $white;
+            background-color: $very-dark-blue;
+            border-bottom-color: $very-dark-blue;
+        }
+    }
+}

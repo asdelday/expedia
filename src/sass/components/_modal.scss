@@ -1,0 +1,50 @@
+.expedia-modal {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: -100px;
+    left: 0;
+    box-shadow: 0 0 5px $black;
+    border: solid 1px $very-dark-grey;
+    opacity: 0;
+    transition: top .5s, opacity .5s;
+    margin-top: 0;
+
+    @media #{$medium-up} {
+        width: 95%;
+        left: 2.5%;
+        margin-top: 2.5%;
+    }
+
+    @media #{$large-up} {
+        width: 90%;
+        left: 5%;
+        margin-top: 5%;
+    }
+
+    .expedia-modal-wrapper {
+        position: relative;
+
+        .expedia-modal-close {
+            position: absolute;
+            color: $white;
+            font-size: 1.9rem;
+            top: 6px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.expedia-modal-bg {
+    z-index: 999;
+    background: $black;
+    opacity: .25;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

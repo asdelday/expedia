@@ -1,0 +1,20 @@
+{
+  "name": "expedia",
+  "version": "0.0.0",
+  "authors": [
+    "Rodrigo Ortega Cuesta <rodortcue@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "susy": "~2.2.5",
+    "font-awesome": "~4.3.0"
+  }
+}

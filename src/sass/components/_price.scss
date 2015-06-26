@@ -1,0 +1,20 @@
+.expedia-price-wrapper {
+    font-size: 0;
+    font-family: $font-family;
+    color: $very-dark-grey;
+
+    .expedia-price-sign {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .expedia-price-currency {
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+
+    .expedia-price {
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+}

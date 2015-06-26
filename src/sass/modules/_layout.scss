@@ -1,0 +1,50 @@
+.expedia-container { @include container(); }
+
+.expedia-c1, .expedia-c1-sm { @include span(1 of 12); }
+.expedia-c2, .expedia-c2-sm { @include span(2 of 12); }
+.expedia-c3, .expedia-c3-sm { @include span(3 of 12); }
+.expedia-c4, .expedia-c4-sm { @include span(4 of 12); }
+.expedia-c5, .expedia-c5-sm { @include span(5 of 12); }
+.expedia-c6, .expedia-c6-sm { @include span(6 of 12); }
+.expedia-c7, .expedia-c7-sm { @include span(7 of 12); }
+.expedia-c8, .expedia-c8-sm { @include span(8 of 12); }
+.expedia-c9, .expedia-c9-sm { @include span(9 of 12); }
+.expedia-c10, .expedia-c10-sm { @include span(10 of 12); }
+.expedia-c11, .expedia-c11-sm { @include span(11 of 12); }
+.expedia-c12, .expedia-c12-sm { @include span(12 of 12); }
+
+
+.expedia-c1-md { @media #{$medium-up} { @include span(1 of 12); } }
+.expedia-c2-md { @media #{$medium-up} { @include span(2 of 12); } }
+.expedia-c3-md { @media #{$medium-up} { @include span(3 of 12); } }
+.expedia-c4-md { @media #{$medium-up} { @include span(4 of 12); } }
+.expedia-c5-md { @media #{$medium-up} { @include span(5 of 12); } }
+.expedia-c6-md { @media #{$medium-up} { @include span(6 of 12); } }
+.expedia-c7-md { @media #{$medium-up} { @include span(7 of 12); } }
+.expedia-c8-md { @media #{$medium-up} { @include span(8 of 12); } }
+.expedia-c9-md { @media #{$medium-up} { @include span(9 of 12); } }
+.expedia-c10-md { @media #{$medium-up} { @include span(10 of 12); } }
+.expedia-c11-md { @media #{$medium-up} { @include span(11 of 12); } }
+.expedia-c12-md { @media #{$medium-up} { @include span(12 of 12); } }
+
+
+.expedia-c1-lg { @media #{$large-up} { @include span(1 of 12); } }
+.expedia-c2-lg { @media #{$large-up} { @include span(2 of 12); } }
+.expedia-c3-lg { @media #{$large-up} { @include span(3 of 12); } }
+.expedia-c4-lg { @media #{$large-up} { @include span(4 of 12); } }
+.expedia-c5-lg { @media #{$large-up} { @include span(5 of 12); } }
+.expedia-c6-lg { @media #{$large-up} { @include span(6 of 12); } }
+.expedia-c7-lg { @media #{$large-up} { @include span(7 of 12); } }
+.expedia-c8-lg { @media #{$large-up} { @include span(8 of 12); } }
+.expedia-c9-lg { @media #{$large-up} { @include span(9 of 12); } }
+.expedia-c10-lg { @media #{$large-up} { @include span(10 of 12); } }
+.expedia-c11-lg { @media #{$large-up} { @include span(11 of 12); } }
+.expedia-c12-lg { @media #{$large-up} { @include span(12 of 12); } }
+
+[class*='expedia-c'] {
+    min-height: 1px;
+
+    &.last {
+        @include last();
+    }
+}

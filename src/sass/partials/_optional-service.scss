@@ -1,0 +1,37 @@
+.expedia-optional-service-panels-container {
+    display: flex;
+    flex-direction: column;
+    @media #{$large-up} {
+        flex-direction: row;
+    }
+
+    .expedia-optional-service-panel  {
+        &:first-child { border-right-width: 1px; }
+        &:last-child {
+            border-left-width: 1px;
+            @media #{$large-up} { border-left-width: 0; }
+        }
+
+        .expedia-optional-service-header {
+        }
+
+        .expedia-optional-service-body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .expedia-optional-service {
+                width: 100%;
+                min-width: 100%;
+                padding: 2px 0;
+                @media #{$large-up} {
+                    width: 49%;
+                    min-width: 49%;
+                    &:nth-child(odd) { margin-right: 1%;}
+                }
+            }
+        }
+
+    }
+
+}
