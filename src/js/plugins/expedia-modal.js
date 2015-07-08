@@ -34,11 +34,15 @@ expediaModal.hideModal = function(e) {
 };
 
 expediaModal.onModalShow = function(modal, callback) {
-    $('<div class="expedia-modal-bg"></div>').appendTo('body');
+    var $bg = $('<div class="expedia-modal-bg"></div>').css('z-index', modal.css('z-index') - 1);
+    $bg.appendTo('body');
+
     modal.css({
         opacity: 1,
         top: $(window).scrollTop()
     });
+
+    modal.data('bg', $bg);
 
     if (callback && typeof callback === 'function') {
         callback();
@@ -46,7 +50,12 @@ expediaModal.onModalShow = function(modal, callback) {
 };
 
 expediaModal.onModalHide = function() {
-    $('.expedia-modal-bg').remove();
+    if ($(this).data('bg')) {
+        $(this).data('bg').remove();
+    } else {
+        $('.expedia-modal-bg').remove();
+    }
+
     $(this).css({
         opacity: 0,
         top: '-100px'

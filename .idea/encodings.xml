@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/.gitignore" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/gulpfile.js" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/js/main.js" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/js/plugins/expedia-accordion.js" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/js/plugins/expedia-modal.js" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/components/_accordion.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/components/_all.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/components/_buttons.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/components/_icons.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/components/_modal.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/components/_panels.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/components/_price.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/main.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/modules/_all.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/modules/_colors.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/modules/_layout.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/modules/_susy-settings.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/modules/_utility.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/modules/_variables.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/page.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/partials/_base.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/partials/_optional-service.scss" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/expedia/src/sass/partials/_upgrade-fare.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gulpfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/plugins/expedia-accordion.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/plugins/expedia-modal.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/components/_accordion.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/components/_all.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/components/_buttons.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/components/_icons.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/components/_modal.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/components/_panels.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/components/_price.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/main.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/modules/_all.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/modules/_colors.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/modules/_layout.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/modules/_susy-settings.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/modules/_utility.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/modules/_variables.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/page.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/partials/_base.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/partials/_details-fare.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/partials/_optional-service.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sass/partials/_upgrade-fare.scss" charset="UTF-8" />
   </component>
 </project>

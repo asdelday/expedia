@@ -224,6 +224,36 @@
   [class*='expedia-c'].last {
     float: right;
     margin-right: 0; }
+  @media only screen and (max-width: 40em) {
+    [class*='expedia-c'].last-sm {
+      float: right;
+      margin-right: 0; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    [class*='expedia-c'].last-md {
+      float: right;
+      margin-right: 0; } }
+  @media only screen and (min-width: 64.063em) {
+    [class*='expedia-c'].last-lg {
+      float: right;
+      margin-right: 0; } }
+
+.separator {
+  width: 100%;
+  display: table; }
+  .separator:before, .separator:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .separator.md-separator {
+    display: none; }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+      .separator.md-separator {
+        display: table; } }
+  .separator.lg-separator {
+    display: none; }
+    @media only screen and (min-width: 64.063em) {
+      .separator.lg-separator {
+        display: table; } }
 
 .expedia-left {
   float: left !important; }
@@ -248,6 +278,9 @@
   padding: 3px 5px;
   font-size: .7rem;
   border-radius: 100%; }
+
+.expedia-question-circle {
+  color: #1f1f1f; }
 
 .expedia-ban {
   color: #D31A24; }
@@ -299,6 +332,23 @@
     .expedia-btn.expedia-primary-btn:active {
       border-color: #003c6e #003c6e #005499;
       background: #0073d2; }
+  .expedia-btn.expedia-secondary-btn {
+    border-color: #d4a900 #aa8700 #aa8700;
+    background: #ffbe00;
+    background: -webkit-linear-gradient(top, #ffbe00 0%, #d4a900 100%);
+    background: linear-gradient(to bottom, #ffbe00 0%, #d4a900 100%);
+    color: #1f1f1f; }
+    .expedia-btn.expedia-secondary-btn:hover {
+      background: #ffcb00; }
+    .expedia-btn.expedia-secondary-btn:active {
+      border-color: #aa8700 #aa8700 #d4a900;
+      background: #ffcb00; }
+  .expedia-btn[disabled], .expedia-btn[disabled]:hover, .expedia-btn[disabled]:active {
+    border-color: #BBB #999 #999;
+    background: #DADADA;
+    background: -webkit-linear-gradient(top, #DADADA 0%, #BBB 100%);
+    background: linear-gradient(to bottom, #DADADA 0%, #BBB 100%);
+    color: #FFF; }
 
 .expedia-panel {
   color: #1f1f1f;
@@ -333,17 +383,20 @@
   opacity: 0;
   -webkit-transition: top 0.5s, opacity 0.5s;
           transition: top 0.5s, opacity 0.5s;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 0; }
   @media only screen and (min-width: 40.063em) {
     .expedia-modal {
       width: 95%;
       left: 2.5%;
-      margin-top: 2.5%; } }
+      margin-top: 2.5%;
+      margin-bottom: 2.5%; } }
   @media only screen and (min-width: 64.063em) {
     .expedia-modal {
-      width: 90%;
-      left: 5%;
-      margin-top: 5%; } }
+      width: 80%;
+      left: 10%;
+      margin-top: 4.5%;
+      margin-bottom: 4.5%; } }
   .expedia-modal .expedia-modal-wrapper {
     position: relative; }
     .expedia-modal .expedia-modal-wrapper .expedia-modal-close {
@@ -466,6 +519,43 @@
           min-width: 49%; }
           .expedia-optional-service-panels-container .expedia-optional-service-panel .expedia-optional-service-body .expedia-optional-service:nth-child(odd) {
             margin-right: 1%; } }
+      .expedia-optional-service-panels-container .expedia-optional-service-panel .expedia-optional-service-body .expedia-optional-service > span {
+        cursor: pointer; }
+        .expedia-optional-service-panels-container .expedia-optional-service-panel .expedia-optional-service-body .expedia-optional-service > span:hover {
+          color: #0073d2 !important; }
+          .expedia-optional-service-panels-container .expedia-optional-service-panel .expedia-optional-service-body .expedia-optional-service > span:hover i, .expedia-optional-service-panels-container .expedia-optional-service-panel .expedia-optional-service-body .expedia-optional-service > span:hover span {
+            color: #0073d2 !important; }
+
+.expedia-optional-services-for-a-fee-panel {
+  margin-top: 0; }
+  @media only screen and (min-width: 64.063em) {
+    .expedia-optional-services-for-a-fee-panel {
+      margin-top: 20px; } }
+  .expedia-optional-services-for-a-fee-panel .expedia-optional-service-body-wrapper {
+    overflow-y: auto;
+    max-height: 325px; }
+    @media only screen and (min-width: 40.063em) {
+      .expedia-optional-services-for-a-fee-panel .expedia-optional-service-body-wrapper {
+        max-height: 375px; } }
+    @media only screen and (min-width: 64.063em) {
+      .expedia-optional-services-for-a-fee-panel .expedia-optional-service-body-wrapper {
+        max-height: 450px; } }
+    .expedia-optional-services-for-a-fee-panel .expedia-optional-service-body-wrapper .expedia-panel-body {
+      padding: 1.69492% 1.69492% 0; }
+  .expedia-optional-services-for-a-fee-panel .expedia-optional-service {
+    background-color: #FAFAFA;
+    border: solid 1px #E5E5E5;
+    padding: 10px;
+    margin-bottom: 1.69492%; }
+    .expedia-optional-services-for-a-fee-panel .expedia-optional-service .expedia-optional-service-name {
+      font-size: 1.1rem;
+      font-weight: 600; }
+    .expedia-optional-services-for-a-fee-panel .expedia-optional-service .expedia-price-wrapper {
+      color: #999; }
+      .expedia-optional-services-for-a-fee-panel .expedia-optional-service .expedia-price-wrapper .expedia-price-sign {
+        font-size: .9rem; }
+      .expedia-optional-services-for-a-fee-panel .expedia-optional-service .expedia-price-wrapper .expedia-price-currency, .expedia-optional-services-for-a-fee-panel .expedia-optional-service .expedia-price-wrapper .expedia-price {
+        font-size: 1rem; }
 
 .expedia-upgrade-fare-panel {
   border-width: 5px;
@@ -510,6 +600,12 @@
       font-weight: 900;
       position: relative;
       top: 6px; }
+      .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-fare-name > span {
+        cursor: pointer; }
+        .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-fare-name > span:hover {
+          color: #0073d2; }
+        .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-fare-name > span i.fa {
+          color: #0073d2; }
     .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-price-included, .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-price-wrapper {
       padding-right: 10px; }
     .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-price-included {
@@ -518,15 +614,40 @@
     .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-price-wrapper {
       position: relative;
       top: -6px; }
+    .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-fare-characteristics-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      @media only screen and (min-width: 64.063em) {
+        .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-fare-characteristics-wrapper {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
     .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-fare-characteristic {
+      margin-right: 0;
       position: relative;
       top: 10px; }
+      .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-fare-characteristic:last-child {
+        margin-right: 0; }
+      @media only screen and (min-width: 64.063em) {
+        .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-fare-characteristic {
+          margin-right: 50px; } }
     .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-suitcase {
       font-size: 20px; }
     .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-check {
       font-size: 20px; }
     .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-ban {
       font-size: 22px; }
+    .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-question-circle {
+      font-size: 20px; }
     .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-header .expedia-usd {
       font-size: 15px;
       padding: 3px 6px; }
@@ -536,6 +657,60 @@
     content: attr(expanded); }
   .expedia-upgrade-fare-panel .expedia-fare-accordion .expedia-fare-item > .expedia-accordion-panel {
     padding: 5px 20px 20px; }
+  .expedia-upgrade-fare-panel .expedia-optional-service-panel .expedia-usd {
+    color: #FFF;
+    background-color: #1f1f1f;
+    padding: 3px 6px;
+    font-size: 12px !important;
+    border-radius: 100%;
+    top: -2px;
+    position: relative; }
+
+.expedia-details-fare-modal, .expedia-details-optional-service-modal {
+  z-index: 1002;
+  width: 95%;
+  left: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%; }
+  @media only screen and (min-width: 40.063em) {
+    .expedia-details-fare-modal, .expedia-details-optional-service-modal {
+      width: 80%;
+      left: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%; } }
+  @media only screen and (min-width: 64.063em) {
+    .expedia-details-fare-modal, .expedia-details-optional-service-modal {
+      width: 60%;
+      left: 20%;
+      margin-top: 7.5%;
+      margin-bottom: 7.5%; } }
+  .expedia-details-fare-modal .expedia-panel-body, .expedia-details-optional-service-modal .expedia-panel-body {
+    padding: 20px; }
+    .expedia-details-fare-modal .expedia-panel-body pre, .expedia-details-optional-service-modal .expedia-panel-body pre {
+      -ms-word-break: break-word;
+      word-break: break-word;
+      white-space: pre-wrap;
+      font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      line-height: 24px; }
+    .expedia-details-fare-modal .expedia-panel-body .expedia-fare-image, .expedia-details-optional-service-modal .expedia-panel-body .expedia-fare-image {
+      display: block;
+      max-width: 150px;
+      margin: 0 auto 20px; }
+      @media only screen and (min-width: 40.063em) {
+        .expedia-details-fare-modal .expedia-panel-body .expedia-fare-image, .expedia-details-optional-service-modal .expedia-panel-body .expedia-fare-image {
+          margin: 0 20px 20px 0;
+          float: left; } }
+    .expedia-details-fare-modal .expedia-panel-body .expedia-fare-strap-line, .expedia-details-optional-service-modal .expedia-panel-body .expedia-fare-strap-line {
+      font-weight: 600;
+      font-style: italic;
+      font-size: 1.25rem;
+      margin-bottom: 30px; }
+    .expedia-details-fare-modal .expedia-panel-body .expedia-fare-total-price, .expedia-details-optional-service-modal .expedia-panel-body .expedia-fare-total-price {
+      text-align: right;
+      color: #999;
+      font-weight: bold;
+      margin-top: 20px; }
 
 *, *:before, *:after {
   box-sizing: border-box; }

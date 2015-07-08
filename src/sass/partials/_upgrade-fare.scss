@@ -62,16 +62,33 @@
                     font-size: 1.25rem;
                     font-weight: 900;
                     @include top-position($top-name);
+
+                    & > span {
+                        cursor: pointer;
+                        &:hover { color: $light-blue; }
+                        i.fa { color: $light-blue; }
+                    }
                 }
 
                 .expedia-price-included, .expedia-price-wrapper { padding-right: 10px; }
                 .expedia-price-included { @include top-position($top-included); }
                 .expedia-price-wrapper { @include top-position($top-price); }
 
-                .expedia-fare-characteristic { @include top-position($top-characteristic); }
+                .expedia-fare-characteristics-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    @media #{$large-up} { flex-direction: row; }
+                }
+                .expedia-fare-characteristic {
+                    margin-right: 0;
+                    @include top-position($top-characteristic);
+                    &:last-child { margin-right: 0; }
+                    @media #{$large-up} { margin-right: 50px; }
+                }
                 .expedia-suitcase { font-size: 20px; }
                 .expedia-check { font-size: 20px; }
                 .expedia-ban { font-size: 22px; }
+                .expedia-question-circle { font-size: 20px; }
                 .expedia-usd { font-size: 15px; padding: 3px 6px; }
 
                 .expedia-accordion-link:before {
@@ -86,6 +103,18 @@
             > .expedia-accordion-panel {
                 padding: 5px 20px 20px;
             }
+        }
+    }
+
+    .expedia-optional-service-panel {
+        .expedia-usd {
+            color: #FFF;
+            background-color: #1f1f1f;
+            padding: 3px 6px;
+            font-size: 12px !important;
+            border-radius: 100%;
+            top: -2px;
+            position: relative;
         }
     }
 }

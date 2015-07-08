@@ -47,4 +47,38 @@
     &.last {
         @include last();
     }
+
+    &.last-sm {
+        @media #{$small-only} { @include last(); }
+    }
+
+    &.last-md {
+        @media #{$medium-only} { @include last(); }
+    }
+
+    &.last-lg {
+        @media #{$large-up} { @include last(); }
+    }
+}
+
+
+.separator {
+    width: 100%;
+    display: table;
+
+    &:before, &:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
+
+    &.md-separator {
+        display: none;
+        @media #{$medium-only} { display: table; }
+    }
+
+    &.lg-separator {
+        display: none;
+        @media #{$large-up} { display: table; }
+    }
 }

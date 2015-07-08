@@ -36,4 +36,23 @@
             background: $light-blue;
         }
     }
+
+    &.expedia-secondary-btn {
+        border-color: $dark-yellow $very-dark-yellow $very-dark-yellow;
+        background: $yellow;
+        background: linear-gradient(to bottom, $yellow 0%, $dark-yellow 100%);
+        color: $very-dark-grey;
+        &:hover { background: $light-yellow; }
+        &:active {
+            border-color: $very-dark-yellow $very-dark-yellow $dark-yellow;
+            background: $light-yellow;
+        }
+    }
+
+    &[disabled], &[disabled]:hover, &[disabled]:active {
+        border-color: $medium-grey $dark-grey $dark-grey;
+        background: $grey;
+        background: linear-gradient(to bottom, $grey 0%, $medium-grey 100%);
+        color: $white;
+    }
 }

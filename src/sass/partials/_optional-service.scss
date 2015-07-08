@@ -29,6 +29,59 @@
                     min-width: 49%;
                     &:nth-child(odd) { margin-right: 1%;}
                 }
+
+
+                > span {
+                    cursor: pointer;
+                    &:hover {
+                        color: $light-blue !important;
+                        i, span {
+                            color: $light-blue !important;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.expedia-optional-services-for-a-fee-panel {
+    margin-top: 0;
+    @media #{$large-up} { margin-top: 20px; }
+
+    .expedia-optional-service-body-wrapper {
+        overflow-y: auto;
+        max-height: 325px;
+        @media #{$medium-up} { max-height: 375px; }
+        @media #{$large-up} { max-height: 450px; }
+
+        .expedia-panel-body {
+            padding: 1.69492% 1.69492% 0;
+        }
+    }
+
+    .expedia-optional-service {
+        background-color: $very-light-grey;
+        border: solid 1px $light-grey;
+        padding: 10px;
+        margin-bottom: 1.69492%;
+
+        .expedia-optional-service-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .expedia-price-wrapper {
+            color: $dark-grey;
+
+            .expedia-price-sign {
+                font-size: .9rem;
+            }
+
+            .expedia-price-currency, .expedia-price {
+                font-size: 1rem;
             }
         }
 
